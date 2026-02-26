@@ -25,6 +25,13 @@ object ValuesAndTypes {
   val aLong: Long = 84927498329482L // 8 byte ints, used a lot in ids, like in java
   val aString: String = "scala rocks"
 
+  val x = 10
+  // x = 20 bad: this is a attempt to modify an already assigned value
+
+  // variables, however, are mutable references
+  var y = 10
+  y = 20
+
 
   def main(args: Array[String]): Unit = {
 
